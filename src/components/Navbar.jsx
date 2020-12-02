@@ -18,9 +18,8 @@ const Navbar = () => {
                 <Link to='/#' className='navbar__items-item btn-color-green contact'>Contact me</Link>
             </div>
             <div className='navbar__social'>
+                <XingLogo className='navbar__social-item'/>
                 <Linkedin className='navbar__social-item'/>
-                <Linkedin className='navbar__social-item'/>
-                {/*<XingLogo className='navbar__social-item'/>*/}
                 <Github className='navbar__social-item'/>
             </div>
         </nav>
