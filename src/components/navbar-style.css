@@ -7,29 +7,31 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 2fr 1fr;
     grid-column-gap: 10px;
+
+    align-items: center;
+    justify-items: center;
 }
 
 .navbar__logo {
     text-decoration: none;
     text-transform: capitalize;
     font-size: 20px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     font-weight: 700;
     color: var(--violet-color);
+
+    justify-self: end;
 }
 
 .navbar__items{
     font-weight: bold;
+
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
 }
 
 .navbar__items-item {
     text-decoration: none;
-    padding: 15px 5px;
+    padding: 15px 15px;
     cursor: pointer;
 }
 
@@ -40,7 +42,7 @@
 .navbar__social {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    justify-self: start;
 }
 
 .navbar__social-item {
