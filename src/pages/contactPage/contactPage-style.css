@@ -1,4 +1,4 @@
-.contact{
+.contact {
     width: 900px;
     margin: 0 auto;
     padding: 30px 50px;
@@ -7,22 +7,23 @@
     background-color: var(--green-color-light);
 }
 
-.contact__header{
+.contact__header {
     font-size: 45px;
+    padding-bottom: 20px;
     text-align: left;
     color: var(--black-deep-color);
 }
 
-.contact__wrapper{
+.contact__wrapper {
     display: flex;
 }
 
-.contact__social{
+.contact__social {
     flex-basis: 40%;
     background-color: rebeccapurple;
 }
 
-.contact__input-block{
+.contact__input-block {
     flex-basis: 60%;
     width: 100%;
     padding: 10px 10px 10px 40px;
@@ -33,18 +34,38 @@
     align-items: stretch;
 }
 
-.contact__input-header{
+.contact__input-header {
     font-size: 24px;
     padding: 15px 0;
     color: var(--black-deep-color);
 }
 
-.contact__input{
+.contact__input {
+    width: 100%;
     padding: 15px 21px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
     background-color: var(--white-color);
     color: var(--black-deep-color);
     border: 1px solid var(--red-color);
+    border-radius: 13px;
+    outline: none;
+}
+
+.contact__textarea {
+    width: 100%;
+    padding: 15px 21px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    color: var(--black-deep-color);
     border-radius: 10px;
     outline: none;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+.contact__control{
+    align-self: flex-end;
 }

@@ -13,8 +13,10 @@ const ContactPage = () => {
                     <h3 className='contact__input-header'>Send a Message</h3>
                     <input className='contact__input' type="text" placeholder='Your Name *'/>
                     <input className='contact__input' type="email" placeholder='Your Email *'/>
-                    <textarea  className='contact__message' name="Message" cols="30" rows="10" placeholder='Message'></textarea>
-                    <button className='btn btn-color-violet'>Send</button>
+                    <textarea className='contact__textarea' name="Message" cols="30" rows="10" placeholder='Message'/>
+                    <div className='contact__control'>
+                        <button className='btn btn-color-violet'>Send</button>
+                    </div>
                 </section>
             </div>
         </div>
