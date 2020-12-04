@@ -8,7 +8,7 @@ const ProjectPage = () => {
             <h2 className='main-header'>Projects</h2>
             <div className='card-wrapper'>
             {[1,2,3].map(a =>
-                <Card/>
+                <Card  />
             )}
             </div>
         </section>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './card-style.css';
+import {Link} from "react-router-dom";
 
 const Card = () => {
     return (
@@ -16,6 +17,9 @@ const Card = () => {
                 <p className='plane-text'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, illum?
                 </p>
+                <div className='card__control'>
+                    <button className='btn-round'>&#62;</button>
+                </div>
             </div>
         </section>
     )
