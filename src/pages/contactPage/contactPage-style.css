@@ -1,0 +1,50 @@
+.contact{
+    width: 900px;
+    margin: 0 auto;
+    padding: 30px 50px;
+    border: 1px solid transparent;
+    border-radius: 45px;
+    background-color: var(--green-color-light);
+}
+
+.contact__header{
+    font-size: 45px;
+    text-align: left;
+    color: var(--black-deep-color);
+}
+
+.contact__wrapper{
+    display: flex;
+}
+
+.contact__social{
+    flex-basis: 40%;
+    background-color: rebeccapurple;
+}
+
+.contact__input-block{
+    flex-basis: 60%;
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.contact__input-header{
+    font-size: 24px;
+    padding: 15px 0;
+    color: var(--black-deep-color);
+}
+
+.contact__input{
+    padding: 15px 21px;
+    margin-bottom: 20px;
+    background-color: var(--white-color);
+    color: var(--black-deep-color);
+    border: 1px solid var(--red-color);
+    border-radius: 10px;
+    outline: none;
+}

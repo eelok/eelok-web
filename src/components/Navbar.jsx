@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className='navbar__items'>
                 <Link to='/#' className='navbar__items-item'>About</Link>
                 <Link to='/#' className='navbar__items-item'>Projects</Link>
-                <Link to='/#' className='navbar__items-item btn btn-color-green contact'>Contact me</Link>
+                <Link to='/contact' className='navbar__items-item btn btn-color-green contact'>Contact me</Link>
             </div>
             <div className='navbar__social'>
                 <XingLogo className='navbar__social-item'/>

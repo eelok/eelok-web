@@ -6,12 +6,11 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 50%);
-
     grid-gap: 40px;
 }
 
 .box-information{
-    padding: 50px 0;
+    padding: 50px 20px 50px 0;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -20,9 +19,9 @@
 }
 
 .box-image {
-    background-image: url("https://picsum.photos/id/1074/400/400");
+    background-image: url("https://picsum.photos/id/1074/380/380");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 

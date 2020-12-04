@@ -8,6 +8,7 @@
 
 :root {
     --green-color: #35c2b2;
+    --green-color-light: #BFEDEA;
     --green-color-dark: #2BAD9E;
     --violet-color: #8474e5;
     --violet-color-dark: #493B9C;
@@ -15,4 +16,5 @@
     --black-color: #000000;
     --black-deep-color: #182850;
     --light-grey-color: #54719d;
+    --red-color: #960f0f;
 }
