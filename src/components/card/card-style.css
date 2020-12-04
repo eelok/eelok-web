@@ -1,0 +1,26 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    max-height: 500px;
+    margin: 15px;
+    box-shadow: 0 15px 34px 0 rgba(16,53,87,0.25);
+    border-radius: 45px;
+}
+
+.card__image-box{
+    width: 100%;
+    height: 200px;
+    background-image: url('https://picsum.photos/id/200/380/380');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+
+}
+
+.card__info{
+    height: 300px;
+    padding: 0 20px 30px 20px;
+}

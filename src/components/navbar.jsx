@@ -6,6 +6,7 @@ import {ReactComponent as Github} from '../assets/github.svg';
 import {ReactComponent as Linkedin} from '../assets/linkedin.svg';
 
 import './button-style.css';
+import Social from "./social/Social";
 
 const Navbar = () => {
 
@@ -15,13 +16,9 @@ const Navbar = () => {
             <div className='navbar__items'>
                 <Link to='/#' className='navbar__items-item'>About</Link>
                 <Link to='/#' className='navbar__items-item'>Projects</Link>
-                <Link to='/contact' className='navbar__items-item btn btn-color-green contact'>Contact me</Link>
+                <Link to='/contact' className='navbar__items-item btn btn-color-green'>Contact me</Link>
             </div>
-            <div className='navbar__social'>
-                <XingLogo className='navbar__social-item'/>
-                <Linkedin className='navbar__social-item'/>
-                <Github className='navbar__social-item'/>
-            </div>
+            <Social/>
         </nav>
     )
 

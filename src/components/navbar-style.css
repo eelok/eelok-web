@@ -39,15 +39,7 @@
     color: var(--green-color);
 }
 
-.navbar__social {
-    display: flex;
-    justify-content: flex-start;
-    justify-self: start;
-}
-
-.navbar__social-item {
-    width: 37px;
-    height: 37px;
-    margin: 5px 3px;
-    cursor: pointer;
+.navbar .social__wrapper{
+    justify-self: flex-end;
+    justify-content: flex-end;
 }

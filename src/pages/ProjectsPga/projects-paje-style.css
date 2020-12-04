@@ -1,0 +1,12 @@
+.projects {
+    margin: 35px auto;
+    padding: 30px;
+}
+
+.projects .main-header {
+    text-align: center;
+}
+
+.card-wrapper {
+    display: flex;
+}

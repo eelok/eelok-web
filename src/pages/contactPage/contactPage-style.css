@@ -1,17 +1,14 @@
 .contact {
     width: 900px;
-    margin: 0 auto;
+    margin: 35px auto;
     padding: 30px 50px;
     border: 1px solid transparent;
     border-radius: 45px;
     background-color: var(--green-color-light);
 }
 
-.contact__header {
-    font-size: 45px;
-    padding-bottom: 20px;
+.contact .main-header {
     text-align: left;
-    color: var(--black-deep-color);
 }
 
 .contact__wrapper {
@@ -20,7 +17,6 @@
 
 .contact__social {
     flex-basis: 40%;
-    background-color: rebeccapurple;
 }
 
 .contact__input-block {
@@ -32,12 +28,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-}
-
-.contact__input-header {
-    font-size: 24px;
-    padding: 15px 0;
-    color: var(--black-deep-color);
 }
 
 .contact__input {
