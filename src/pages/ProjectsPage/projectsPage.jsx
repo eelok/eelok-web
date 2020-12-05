@@ -1,15 +1,18 @@
 import React from 'react';
 import Card from "../../components/card/card";
-import './projects-paje-style.css';
+import './projects-page-style.css';
+import {PROJECTS_DATA}  from '../../components/card/projectsData';
 
 const ProjectPage = () => {
     return (
         <section className='projects'>
             <h2 className='main-header'>Projects</h2>
             <div className='card-wrapper'>
-            {[1,2,3].map(a =>
-                <Card  />
-            )}
+            {
+                PROJECTS_DATA.map(project =>
+                   <Card key={project.id} {...project}/>
+               )
+            }
             </div>
         </section>
     )
