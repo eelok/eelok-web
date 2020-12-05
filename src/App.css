@@ -22,14 +22,28 @@
 
 
 .main-header{
-    font-size: 45px;
-    padding-bottom: 18px;
+    font-size: 25px;
+    padding: 10px;
     color: var(--black-deep-color);
 }
+
+@media (min-width: 768px) {
+    .main-header{
+        font-size: 45px;
+        padding-bottom: 18px;
+        color: var(--black-deep-color);
+    }
+}
 .secondary-header{
-    font-size: 24px;
+    font-size: 20px;
     padding: 15px 0;
     color: var(--black-deep-color);
+}
+
+@media (min-width: 768px) {
+    .secondary-header{
+        font-size: 24px;
+    }
 }
 .third-header{
     text-transform: uppercase;
