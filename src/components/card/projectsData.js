@@ -12,6 +12,6 @@ export const PROJECTS_DATA = [
     {
         id: 3,
         title: 'Songs Microservices',
-        technology: ['Java', 'Spring', 'Spring Cloud', 'Hibernate', 'JUnit', 'Mockito', 'Eureka']
+        technology: ['Java', 'Spring', 'Spring Cloud', 'Eureka', 'Hibernate', 'JUnit', 'Mockito']
     },
 ]

@@ -15,9 +15,9 @@ const Card = ({title, technology}) => {
                         )
                     }
                 </div>
-                <div className='card__control'>
-                    <GitHubLogo className='link-button-to-social'/>
-                </div>
+                {/*<div className='card__control'>*/}
+                    <GitHubLogo className='card__info-link-project-github'/>
+                {/*</div>*/}
             </div>
         </section>
     )

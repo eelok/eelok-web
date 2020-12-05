@@ -33,9 +33,3 @@
     background-color: var(--violet-color-dark);
     color: var(--white-color);
 }
-.link-button-to-social{
-    width: 40px;
-    height: 40px;
-    margin: 5px 10px 5px 5px;
-    cursor: pointer;
-}
