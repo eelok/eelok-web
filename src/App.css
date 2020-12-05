@@ -16,8 +16,10 @@
     --black-color: #000000;
     --black-deep-color: #182850;
     --light-grey-color: #54719d;
+    --lignt-light-grey-color: #DAE2EC;
     --red-color: #960f0f;
 }
+
 
 .main-header{
     font-size: 45px;
@@ -35,9 +37,23 @@
     padding: 3px 0;
     color: var(--light-grey-color);
 }
+
+
 .plane-text{
     font-size: 16px;
     color: var(--black-deep-color);
     line-height: 1.4;
     padding: 5px 0;
+}
+
+.text-tag{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 4px 8px;
+    line-height: 1.2;
+    margin: 4px;
+    color: var(--black-deep-color);
+    background-color: var(--lignt-light-grey-color);
+    border-radius: 5px;
 }
