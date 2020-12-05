@@ -1,14 +1,13 @@
-.projects {
-    margin: 35px auto;
-    padding: 30px;
-}
 
 .projects .main-header {
     text-align: center;
+    padding: 5px;
 }
 
-.card-wrapper {
+.cards-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    padding: 10px;
 }

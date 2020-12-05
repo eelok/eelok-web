@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 330px;
     height: 450px;
-    margin: 15px;
+    margin: 10px;
     box-shadow: 0 15px 34px 0 rgba(16,53,87,0.25);
     border-radius: 45px;
 
@@ -28,6 +28,7 @@
 .card__info{
     height: 50%;
     padding: 0 20px 20px 20px;
+    text-align: center;
 
     display: flex;
     flex-direction: column;
@@ -37,15 +38,10 @@
 
 .card__info-technology{
     padding: 10px 0 0 0;
-    margin: 10px 0 0 0;
     text-align: center;
     flex-grow: 1;
 
 }
-
-/*.card__control{*/
-/*    align-self: flex-end;*/
-/*}*/
 
 .card__info-link-project-github{
     width: 70px;

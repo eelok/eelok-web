@@ -1,6 +1,6 @@
 import React from 'react';
 import './card-style.css';
-import { ReactComponent as GitHubLogo } from '../../assets/github.svg';
+import {ReactComponent as GitHubLogo} from '../../assets/github.svg';
 
 const Card = ({title, technology}) => {
     return (
@@ -15,9 +15,7 @@ const Card = ({title, technology}) => {
                         )
                     }
                 </div>
-                {/*<div className='card__control'>*/}
-                    <GitHubLogo className='card__info-link-project-github'/>
-                {/*</div>*/}
+                <GitHubLogo className='card__info-link-project-github'/>
             </div>
         </section>
     )
