@@ -14,8 +14,8 @@ const Navbar = () => {
         <nav className='navbar'>
             <Link to='/' className='navbar__logo'>Eelok</Link>
             <div className='navbar__items'>
-                <Link to='/#' className='navbar__items-item'>About</Link>
-                <Link to='/#' className='navbar__items-item'>Projects</Link>
+                <Link to='/about' className='navbar__items-item'>About</Link>
+                <Link to='/projects' className='navbar__items-item'>Projects</Link>
                 <Link to='/contact' className='navbar__items-item btn btn-color-green'>Contact me</Link>
             </div>
             <Social/>

@@ -1,0 +1,21 @@
+import React from 'react';
+import './about-style.css';
+
+const AboutPage = () => {
+    return (
+        <section className='about'>
+            <div className='about__info-block'>
+                <h2 className='main-header'>Main Information aboyt Eelok</h2>
+                <p className='plane-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aliquid
+                    aperiam architecto at commodi debitis dolore dolores eos error impedit ipsa magni, optio quia
+                    recusandae
+                    rerum sit, velit voluptatum.</p>
+            </div>
+            <div className='about__gallery-block'>
+                &nbsp;
+            </div>
+        </section>
+    )
+
+}
+export default AboutPage;
