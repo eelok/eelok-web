@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
     .home{
         margin: 30px 0;
         flex-direction: row;
@@ -15,7 +15,6 @@
 }
 
 .home__gallery {
-    flex-basis: 50%;
     height: 250px;
     width: 100%;
     padding: 20px 0;
@@ -25,9 +24,10 @@
     background-size: cover;
     background-position: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 508px) {
     .home__gallery{
         margin-right: 30px;
+        flex-basis: 50%;
     }
 }
 .home__information{
