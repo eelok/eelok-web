@@ -8,7 +8,7 @@ const ContactPage = () => {
             <h2 className='main-header'>Contact Me</h2>
             <div className='contact__wrapper'>
                 <section className='contact__social'>
-                    <h3 className='secondary-header'>Send a Message</h3>
+                    <h3 className='secondary-header'>Get in Touch</h3>
                     <Social/>
                 </section>
                 <section className='contact__input-block'>

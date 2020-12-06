@@ -1,7 +1,7 @@
 .contact {
-    width: 900px;
-    margin: 35px auto;
-    padding: 30px 50px;
+    max-width: 900px;
+    margin: 10px;
+    padding: 15px;
     border: 1px solid transparent;
     border-radius: 45px;
     background-color: var(--green-color-light);
@@ -9,10 +9,13 @@
 
 .contact .main-header {
     text-align: left;
+    padding-left: 0;
+    padding-bottom: 0;
 }
 
 .contact__wrapper {
     display: flex;
+    flex-direction: column;
 }
 
 .contact__social {
@@ -22,7 +25,6 @@
 .contact__input-block {
     flex-basis: 60%;
     width: 100%;
-    padding: 10px 10px 10px 40px;
 
     display: flex;
     flex-direction: column;
@@ -58,4 +60,5 @@
 
 .contact__control{
     align-self: flex-end;
+    padding-bottom: 10px;
 }
