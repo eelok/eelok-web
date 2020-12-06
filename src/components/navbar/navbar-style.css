@@ -4,30 +4,24 @@
     padding: 0 30px;
     margin: 20px 0 3px 0;
 
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-column-gap: 10px;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    justify-items: center;
 }
 
 .navbar__logo {
+    flex-grow: 1;
     text-decoration: none;
     text-transform: capitalize;
     font-size: 20px;
     font-weight: 700;
     color: var(--violet-color);
-
-    justify-self: self-start;
 }
 
 .navbar__items{
     font-weight: bold;
-
     display: flex;
-    align-items: center;
 }
 .navbar__items .btn{
     font-size: 16px;
@@ -43,6 +37,6 @@
 }
 
 .navbar .social__wrapper{
-    justify-self: flex-end;
+    flex-grow: 1;
     justify-content: flex-end;
 }

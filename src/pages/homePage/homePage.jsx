@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 const HomePage = () => {
     return (
-        <div>
+        <>
             <Navbar/>
             <div className='container'>
                 <section className='home'>
@@ -22,7 +22,7 @@ const HomePage = () => {
                     </div>
                 </section>
             </div>
-        </div>
+        </>
     )
 }
 
