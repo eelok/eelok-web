@@ -8,7 +8,7 @@ const HomePage = () => {
     return (
         <div>
             <Navbar/>
-            <section className='container'>
+            <section className='container-home'>
                 <div className='box-image'>
 
                 </div>

@@ -13,6 +13,14 @@
     cursor: pointer;
 }
 
+@media (min-width: 768px) {
+    .btn{
+        min-width: 180px;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
 .btn-color-green {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--green-color);
