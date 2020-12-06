@@ -1,7 +1,8 @@
 .navbar {
-    max-width: 900px;
-    margin: 30px auto;
     font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    padding: 0 30px;
+    margin: 20px 0 3px 0;
 
     display: grid;
     grid-template-rows: 1fr;
@@ -19,7 +20,7 @@
     font-weight: 700;
     color: var(--violet-color);
 
-    justify-self: end;
+    justify-self: self-start;
 }
 
 .navbar__items{
@@ -28,7 +29,9 @@
     display: flex;
     align-items: center;
 }
-
+.navbar__items .btn{
+    font-size: 16px;
+}
 .navbar__items-item {
     text-decoration: none;
     padding: 15px 15px;

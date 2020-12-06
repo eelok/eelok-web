@@ -1,7 +1,7 @@
 import './App.css';
 
 import React from "react";
-import HomePage from "./pages/homePage/HomePage";
+import HomePage from "./pages/homePage/homePage";
 import {Switch, Route} from "react-router-dom";
 import ContactPage from "./pages/contactPage/contactPage";
 import ProjectPage from "./pages/projectsPage/projectsPage";

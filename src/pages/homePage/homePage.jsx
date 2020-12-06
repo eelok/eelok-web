@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from "../../components/navbar";
+import Navbar from "../../components/navbar/navbar";
 import './homepage-style.css';
 import {Link} from "react-router-dom";
 
@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 const HomePage = () => {
     return (
         <div>
-            {/*<Navbar/>*/}
+            <Navbar/>
             <div className='container'>
                 <section className='home'>
                     <div className='home__gallery'>
