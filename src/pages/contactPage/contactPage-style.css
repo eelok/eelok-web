@@ -1,25 +1,32 @@
 .contact {
     max-width: 900px;
     margin: 10px;
-    padding: 15px;
+    padding: 35px 40px;
     border: 1px solid transparent;
-    border-radius: 45px;
+    border-radius: 40px;
     background-color: var(--green-color-light);
 }
 
 .contact .main-header {
     text-align: left;
     padding-left: 0;
-    padding-bottom: 0;
 }
 
 .contact__wrapper {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+}
+
+.contact__wrapper .secondary-header{
+    padding: 10px 0;
 }
 
 .contact__social {
     flex-basis: 40%;
+}
+.contact__social .social__wrapper{
+    margin-bottom: 30px;
 }
 
 .contact__input-block {
@@ -35,12 +42,12 @@
 .contact__input {
     width: 100%;
     padding: 15px 21px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-size: 16px;
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
     background-color: var(--white-color);
     color: var(--black-deep-color);
-    border: 1px solid var(--red-color);
+    border: 1px solid transparent;
     border-radius: 13px;
     outline: none;
 }
@@ -52,7 +59,7 @@
     border: 1px solid transparent;
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
     color: var(--black-deep-color);
-    border-radius: 10px;
+    border-radius: 13px;
     outline: none;
     margin-bottom: 30px;
     resize: none;
