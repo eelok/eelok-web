@@ -5,7 +5,7 @@ import {PROJECTS_DATA}  from '../../components/card/projectsData';
 
 const ProjectPage = () => {
     return (
-        <section className='projects'>
+        <section className='projects container'>
             <h2 className='main-header'>Projects</h2>
             <div className='cards-wrapper'>
             {
