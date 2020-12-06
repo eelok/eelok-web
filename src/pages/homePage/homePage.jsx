@@ -2,6 +2,9 @@ import React from 'react';
 import Navbar from "../../components/navbar/navbar";
 import './homepage-style.css';
 import {Link} from "react-router-dom";
+import AboutPage from "../aboutPage/aboutPage";
+import ProjectPage from "../projectsPage/projectsPage";
+import ContactPage from "../contactPage/contactPage";
 
 
 const HomePage = () => {
@@ -22,6 +25,9 @@ const HomePage = () => {
                     </div>
                 </section>
             </div>
+            <AboutPage/>
+            <ProjectPage/>
+            <ContactPage/>
         </>
     )
 }
