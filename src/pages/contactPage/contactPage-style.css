@@ -45,6 +45,7 @@
     padding: 15px 21px;
     margin-bottom: 15px;
     font-size: 16px;
+    font-family: inherit;
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
     background-color: var(--white-color);
     color: var(--black-deep-color);
@@ -56,6 +57,7 @@
 .contact__textarea {
     width: 100%;
     padding: 15px 21px;
+    font-family: inherit;
     font-size: 16px;
     border: 1px solid transparent;
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
@@ -64,6 +66,10 @@
     outline: none;
     margin-bottom: 30px;
     resize: none;
+}
+.contact__textarea::placeholder, .contact__input::placeholder{
+    color: var(--black-deep-color);
+    font-size: 16px;
 }
 
 .contact__control{
