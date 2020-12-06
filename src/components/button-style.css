@@ -1,9 +1,10 @@
 .btn {
-    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
     font-weight: 700;
-    min-width: 180px;
+    min-width: 120px;
     text-align: center;
-    padding: 15px;
+    padding: 8px 12px;
 
     text-decoration: none;
     border-radius: 30px;
@@ -12,24 +13,26 @@
     cursor: pointer;
 }
 
-.btn-color-green:hover{
-    background-color: var(--green-color-dark);
-    color: var(--white-color);
-}
-
-.btn-color-green{
+.btn-color-green {
+    font-family: 'Open Sans', sans-serif;
     background-color: var(--green-color);
     color: var(--white-color);
     box-shadow: 0 3px 0 var(--green-color-dark);
 }
 
-.btn-color-violet{
+.btn-color-green:hover {
+    background-color: var(--green-color-dark);
+    color: var(--white-color);
+}
+
+.btn-color-violet {
+    font-family: 'Open Sans', sans-serif;
     background-color: var(--violet-color);
     color: var(--white-color);
     box-shadow: 0 3px 0 var(--violet-color-dark);
 }
 
-.btn-color-violet:hover{
+.btn-color-violet:hover {
     background-color: var(--violet-color-dark);
     color: var(--white-color);
 }
