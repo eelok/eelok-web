@@ -5,7 +5,7 @@ import Social from "../../components/social/Social";
 const ContactPage = () => {
     return (
         <div className='container'>
-            <div className='contact'>
+            <div className='contact' id='contact'>
                 <h2 className='main-header'>Contact Me</h2>
                 <div className='contact__wrapper'>
                     <section className='contact__social'>

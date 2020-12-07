@@ -11,7 +11,10 @@ const Card = ({title, technology}) => {
                 <div className='card__info-technology'>
                     {
                         technology.map(item =>
-                            <div className='text-tag'>{item}</div>
+                            //проверить верно ли это
+                            <div className='text-tag' key={item.toString()}>
+                                 {item}
+                            </div>
                         )
                     }
                 </div>

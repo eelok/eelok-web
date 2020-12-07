@@ -1,34 +1,32 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import './navbar-style.css';
 
 import '../button/button-style.css';
-import Social from "../social/Social";
+import {useState} from "react";
 
 const Navbar = () => {
+
+    const [menuIsOpen, setMenuIsOpen] = useState(false);
 
     return (
         <div className='container'>
             <nav className='navbar'>
-                <Link to='/' className='navbar__logo'>Eelok</Link>
-                <div className='mobileNav'>
-                    <div className='hamburger'>
-                        <div className='line'></div>
-                        <div className='line'></div>
-                        <div className='line'></div>
-                    </div>
-                    <ul className="nav-links">
-                        <li><a className='nav-links__item' href="#">About</a></li>
-                        <li><a className='nav-links__item' href="#">Projects</a></li>
-                        <li><a className='nav-links__item' href="#">Contact</a></li>
-                    </ul>
+                <div className='hamburger' onClick={() => setMenuIsOpen(true)}>
+                    <div className='line'></div>
+                    <div className='line'></div>
+                    <div className='line'></div>
                 </div>
-                {/*<div className='navbar__items'>*/}
-                {/*    <Link to='/about' className='navbar__items-item'>About</Link>*/}
-                {/*    <Link to='/projects' className='navbar__items-item'>Projects</Link>*/}
-                {/*    <Link to='/contact' className='navbar__items-item btn btn-color-green'>Contact me</Link>*/}
-                {/*</div>*/}
-                <Social/>
+                <ul className={`nav-links ${menuIsOpen ? 'nav-links-open' : ''}`}>
+                    <li><a className='nav-links__item' href="#about"
+                        onClick={() => setMenuIsOpen(false)}
+                    >About</a></li>
+                    <li><a className='nav-links__item' href='#projects'
+                       onClick={() => setMenuIsOpen(false)}
+                    >Projects</a></li>
+                    <li><a className='nav-links__item' href="#contact"
+                       onClick={() => setMenuIsOpen(false)}
+                    >Contact</a></li>
+                </ul>
             </nav>
         </div>
     )

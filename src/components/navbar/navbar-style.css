@@ -3,39 +3,11 @@
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     padding: 0 30px;
-    background-color: var(--violet-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     position: relative;
 }
 
-.navbar__logo {
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--green-color);
-}
-
-@media (min-width: 768px) {
-    .navbar__logo{
-        flex-basis: 33.33%;
-    }
-}
-
-.mobileNav{
-
-}
-
-@media (min-width: 768px) {
-    .mobileNav{
-        flex-basis: 33.33%;
-    }
-}
-
-.line{
+.line {
     width: 30px;
     height: 3px;
     margin: 5px;
@@ -43,65 +15,45 @@
     background-color: var(--white-color);
 }
 
-.hamburger{
+.hamburger {
     cursor: pointer;
     margin: 7px;
-    background-color: var(--green-color);
+    background-color: var(--black-deep-color);
 
     position: absolute;
-    right: 7%;
+    right: 6%;
     top: 40%;
-    transform: translate(-7%, -40%);
+    transform: translate(-6%, -40%);
 
+    z-index: 2;
 }
-.nav-links{
+
+.nav-links {
+    /*position: fixed;*/
     list-style: none;
-    background-color: #8474e5;
-    position: fixed;
     height: 100vh;
     width: 100%;
+    background-color: var(--violet-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    clip-path: circle(100px at 90% -15%);
+    -webkit-clip-path: circle(100px at 90% -15%);
+    transition: all 1s ease-out;
 
     z-index: 1;
 }
 
-@media (min-width: 768px){
-    .nav-links{
-        display: flex;
-        height: 100%;
-        justify-content: space-between;
-    }
+.nav-links-open {
+    clip-path: circle(1000px at 90% -15%);
+    -webkit-clip-path: circle(1000px at 90% -15%);
 }
 
 .nav-links__item {
     text-decoration: none;
-    color: var(--black-deep-color);
-}
-/*desctop*/
-/*.navbar__items{*/
-/*    font-weight: bold;*/
-/*    display: flex;*/
-/*}*/
-/*.navbar__items .btn{*/
-/*    font-size: 16px;*/
-/*}*/
-/*.navbar__items-item {*/
-/*    text-decoration: none;*/
-/*    padding: 15px 15px;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.navbar__items-item:hover {*/
-/*    color: var(--green-color);*/
-/*}*/
-
-.navbar .social__wrapper{
-    display: none;
-}
-
-@media (min-width: 768px) {
-    .navbar .social__wrapper{
-        display: flex;
-        justify-content: flex-end;
-    }
+    color: var(--white-color);
 }
 
