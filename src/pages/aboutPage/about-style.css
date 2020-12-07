@@ -47,7 +47,7 @@
 
     .about__gallery-block{
         width: 50%;
-        margin: 0;
+        margin: 10px 0 10px 30px;
         height: auto;
     }
 }
