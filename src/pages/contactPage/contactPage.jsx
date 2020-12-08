@@ -1,6 +1,7 @@
 import React from 'react';
 import './contactPage-style.css';
 import Social from "../../components/social/Social";
+import '../../components/button/button-style.css';
 
 const ContactPage = () => {
     return (

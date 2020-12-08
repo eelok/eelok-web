@@ -1,18 +1,19 @@
 import React from 'react';
-import Navbar from "../../components/navbar/navbar";
+
 import './homepage-style.css';
 import {Link} from "react-router-dom";
 import AboutPage from "../aboutPage/aboutPage";
 import ProjectPage from "../projectsPage/projectsPage";
 import ContactPage from "../contactPage/contactPage";
-
+import Menu from "../../components/navbar/menu";
+import '../../components/button/button-style.css';
 
 const HomePage = () => {
     return (
         <>
-            <Navbar/>
+            <Menu/>
             <div className='container'>
-                <section className='home'>
+                <section className='home' id="home">
                     <div className='home__gallery'>
 
                     </div>
