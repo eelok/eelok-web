@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import './navigation-style.css';
-import {useState} from "react";
+import {MenuContext} from "../../context/menuContext";
 
 const Navigation = () => {
 
-    const [isOpen, setIsOpen] = useState(false);
+    const [menuIsOpen, setMenuIsOpen] = useContext(MenuContext);
 
     const toggleMenu = () => {
-        setIsOpen(!isOpen)
+        setMenuIsOpen(!menuIsOpen)
     }
 
     return (
@@ -26,22 +26,22 @@ const Navigation = () => {
                 <ul className="navigation__list">
                     <li className='navigation__item'>
                         <a href="#home"
-                               className={`navigation__link ${isOpen ? 'navigation__link-open' : ''}`}
+                               className={`navigation__link ${menuIsOpen ? 'navigation__link-open' : ''}`}
                            >Home</a>
                     </li>
                     <li className='navigation__item'>
                         <a href="#about"
-                           className={`navigation__link ${isOpen ? 'navigation__link-open' : ''}`}
+                           className={`navigation__link ${menuIsOpen ? 'navigation__link-open' : ''}`}
                            >About</a>
                     </li>
                     <li className='navigation__item'>
                         <a href="#projects"
-                           className={`navigation__link ${isOpen ? 'navigation__link-open' : ''}`}
+                           className={`navigation__link ${menuIsOpen ? 'navigation__link-open' : ''}`}
                            >Projects</a>
                     </li>
                     <li className='navigation__item'>
                         <a href="#contact"
-                           className={`navigation__link ${isOpen ? 'navigation__link-open' : ''}`}
+                           className={`navigation__link ${menuIsOpen ? 'navigation__link-open' : ''}`}
                            >Contact</a>
                     </li>
                 </ul>

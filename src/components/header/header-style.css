@@ -20,7 +20,9 @@
     left: 0;
     background-color: var(--lignt-light-grey-color);
     transform: translateX(-300px);
-    z-index: 20;
+    z-index: 7;
+    transition: all .8s ease;
+    opacity: 0;
 }
 .overlay--open{
     position: fixed;
@@ -29,5 +31,7 @@
     top:0;
     left: 0;
     background-color: var(--lignt-light-grey-color);
-    transform: translateX(0);
+    transform: translateX(-200px);
+    transition: all .8s ease;
+    opacity: 1;
 }
