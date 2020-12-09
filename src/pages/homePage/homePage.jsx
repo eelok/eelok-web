@@ -13,7 +13,7 @@ const HomePage = () => {
         <>
             <Header/>
             <div className='container'>
-                <section className='home' id="home">
+                <section className='home'>
                     <div className='home__gallery'>
 
                     </div>
