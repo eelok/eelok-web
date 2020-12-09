@@ -5,15 +5,15 @@ import {Link} from "react-router-dom";
 import AboutPage from "../aboutPage/aboutPage";
 import ProjectPage from "../projectsPage/projectsPage";
 import ContactPage from "../contactPage/contactPage";
-import Menu from "../../components/navbar/menu";
 import '../../components/button/button-style.css';
+import Header from "../../components/header/header";
 
 const HomePage = () => {
     return (
         <>
-            <Menu/>
+            <Header/>
             <div className='container'>
-                <section className='home' id="home">
+                <section className='home'>
                     <div className='home__gallery'>
 
                     </div>
