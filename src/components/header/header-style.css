@@ -1,0 +1,13 @@
+.header{
+    max-width: 900px;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainLogo{
+    height: 40px;
+    width: 40px;
+}

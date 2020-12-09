@@ -82,14 +82,3 @@
     border-radius: 5px;
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    /*opacity: 0;*/
-    background-color: var(--lignt-light-grey-color);
-    height: 100%;
-    width: 100%;
-    /*transition: opacity 1s;*/
-    z-index: 1;
-}
