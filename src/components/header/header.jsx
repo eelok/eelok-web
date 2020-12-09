@@ -5,6 +5,7 @@ import './header-style.css';
 import Navigation from "../navbar/navigation";
 
 import {MenuContext} from "../../context/menuContext";
+import Social from "../social/Social";
 
 const Header = () => {
 
@@ -15,6 +16,7 @@ const Header = () => {
             <div className={`overlay ${menuIsOpen ? 'overlay--open' : ''}`}></div>
             <ELogo className='mainLogo'/>
             <Navigation/>
+            <Social/>
         </div>
     )
 };

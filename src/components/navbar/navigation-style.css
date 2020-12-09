@@ -9,6 +9,11 @@
     display: none;
 }
 
+@media (min-width: 768px) {
+    .navigation__checkbox{
+        display: none;
+    }
+}
 
 .navigation__button{
     height: 50px;
@@ -24,6 +29,12 @@
     text-align: center;
     cursor: pointer;
 }
+
+@media (min-width: 768px) {
+    .navigation__button{
+        display: none;
+    }
+}
 .navigation__background {
     height: 45px;
     width: 45px;
@@ -37,6 +48,11 @@
     z-index: 5;
 }
 
+@media (min-width: 768px) {
+    .navigation__background{
+        display: none;
+    }
+}
 .navigation__nav{
     height: 100vh;
     width: 300px;
@@ -51,6 +67,14 @@
     transition: all .6s ease;
 }
 
+@media (min-width: 768px) {
+    .navigation__nav{
+        width: 100%;
+        background: transparent;
+        transform: translateX(0);
+    }
+}
+
 .navigation__list{
     width: 100%;
     list-style: none;
@@ -63,10 +87,23 @@
     padding-top: 80px;
 }
 
+@media (min-width: 768px) {
+    .navigation__list{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+    }
+}
+
 .navigation__item{
     margin: 16px;
 }
-
+@media (min-width:  768px) {
+    .navigation__item{
+        margin: 16px 8px;
+    }
+}
 .navigation__link{
     font-size: 25px;
     font-weight: 300;
@@ -74,6 +111,13 @@
     text-decoration: none;
     padding: 10px 20px;
     cursor: pointer;
+}
+@media (min-width: 768px) {
+    .navigation__link{
+        font-size: 20px;
+        padding: 8px 10px;
+        color: var(--black-deep-color);
+    }
 }
 .navigation__nav--open{
     transform: translateX(20px);
