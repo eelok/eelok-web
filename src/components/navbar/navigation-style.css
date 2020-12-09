@@ -52,10 +52,10 @@
     transition: all .8s ease;
 }
 
-.navigation__nav-open{
-    width: 70%;
-    opacity: 1;
-}
+/*.navigation__nav-open{*/
+/*    width: 70%;*/
+/*    opacity: 1;*/
+/*}*/
 
 .navigation__list{
     width: 100%;
@@ -134,3 +134,4 @@
     top:0;
     transform: rotate(-135deg);
 }
+
