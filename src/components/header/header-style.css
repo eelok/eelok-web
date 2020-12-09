@@ -30,6 +30,7 @@
 .header .social__wrapper{
     visibility: hidden;
     pointer-events: none;
+    cursor: default;
 }
 
 @media (min-width: 768px) {
