@@ -1,5 +1,6 @@
 .header{
     max-width: 900px;
+    margin: 0 auto;
     padding: 15px 30px;
 
     display: flex;
@@ -36,6 +37,8 @@
 @media (min-width: 768px) {
     .header .social__wrapper{
         visibility: visible;
+        margin-top: 5px;
+        align-items: baseline;
         pointer-events: all;
     }
 }
