@@ -10,6 +10,14 @@ const Navigation = () => {
         setMenuIsOpen(!menuIsOpen)
     }
 
+    const isOpen = () => {
+        setMenuIsOpen(true);
+    }
+
+    const isClose = () => {
+        setMenuIsOpen(false);
+    }
+
     return (
         <div className='navigation'>
             <input className='navigation__checkbox' type="checkbox" id='navi-toggle'
@@ -27,25 +35,25 @@ const Navigation = () => {
                     <li className='navigation__item'>
                         <a href="#home"
                                className={`navigation__link ${menuIsOpen ? 'navigation__nav--open' : ''}`}
-                           onClick={toggleMenu}
+                           onClick={isClose}
                            >Home</a>
                     </li>
                     <li className='navigation__item'>
                         <a href="#about"
                            className={`navigation__link ${menuIsOpen ? 'navigation__nav--open' : ''}`}
-                           onClick={toggleMenu}
+                           onClick={isClose}
                            >About</a>
                     </li>
                     <li className='navigation__item'>
                         <a href="#projects"
                            className={`navigation__link ${menuIsOpen ? 'navigation__nav--open' : ''}`}
-                           onClick={toggleMenu}
+                           onClick={isClose}
                            >Projects</a>
                     </li>
                     <li className='navigation__item'>
                         <a href="#contact"
                            className={`navigation__link ${menuIsOpen ? 'navigation__link-open' : ''}`}
-                           onClick={toggleMenu}
+                           onClick={isClose}
                            >Contact</a>
                     </li>
                 </ul>
