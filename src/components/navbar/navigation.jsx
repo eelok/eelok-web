@@ -10,9 +10,6 @@ const Navigation = () => {
         setMenuIsOpen(!menuIsOpen)
     }
 
-    const isOpen = () => {
-        setMenuIsOpen(true);
-    }
 
     const isClose = () => {
         setMenuIsOpen(false);
