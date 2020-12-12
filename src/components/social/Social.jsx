@@ -5,11 +5,15 @@ import {ReactComponent as Linkedin} from '../../assets/linkedin.svg';
 import './socila-style.css';
 
 const Social = () => {
-    return(
+    return (
         <section className='social__wrapper'>
-            <XingLogo className='navbar__social-item'/>
-            <Linkedin className='navbar__social-item'/>
-            <Github className='navbar__social-item'/>
+            <a href="https://www.xing.com/profile/Maria_Petretckaia/cv">
+                <XingLogo className='navbar__social-item'/>
+            </a>
+            <Linkedin className='navbar__social-item linkedin'/>
+            <a href='https://github.com/eelok'>
+                <Github className='navbar__social-item'/>
+            </a>
         </section>
     )
 }

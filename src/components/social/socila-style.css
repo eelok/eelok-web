@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    border: 1px solid var(--white-color);
     border-radius: 50px;
     background-color: var(--white-color);
     padding: 5px 0;
@@ -16,4 +14,13 @@
     height: 25px;
     margin: 0 2px;
     cursor: pointer;
+    fill:  var(--violet-color);
+}
+.navbar__social-item:hover {
+    fill: var(--violet-color-dark);
+}
+
+.navbar__social-item.linkedin {
+    width: 26px;
+    height: 26px;
 }
