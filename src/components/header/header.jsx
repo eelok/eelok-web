@@ -4,12 +4,12 @@ import {ReactComponent as ELogo} from '../../assets/linkedin.svg';
 import './header-style.css';
 import Navigation from "../navbar/navigation";
 
-import {MenuContext} from "../../context/menuContext";
+import {AllStateContext} from "../../context/AllStateContext";
 import Social from "../social/Social";
 
 const Header = () => {
 
-    const[menuIsOpen] = useContext(MenuContext);
+    const {menuIsOpen} = useContext(AllStateContext);
 
     return (
         <div className='header' id="home">

@@ -1,25 +1,26 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import './navigation-style.css';
-import {MenuContext} from "../../context/menuContext";
+import {AllStateContext} from "../../context/AllStateContext";
 
 const Navigation = () => {
 
-    const [menuIsOpen, setMenuIsOpen] = useContext(MenuContext);
+    const {menuIsOpen, setMenuIsOpen} = useContext(AllStateContext);
 
     const toggleMenu = () => {
         setMenuIsOpen(!menuIsOpen)
     }
 
 
-    const isClose = () => {
+    const close = () => {
         setMenuIsOpen(false);
     }
 
     return (
         <div className='navigation'>
             <input className='navigation__checkbox' type="checkbox" id='navi-toggle'
-                checked={menuIsOpen}
-                onClick={toggleMenu}
+                   onChange={() => {}}
+                   checked={menuIsOpen}
+                   onClick={toggleMenu}
             />
             <label className='navigation__button' htmlFor="navi-toggle">
                 <div className='line_middle'>
@@ -31,27 +32,27 @@ const Navigation = () => {
                 <ul className="navigation__list">
                     <li className='navigation__item'>
                         <a href="#home"
-                               className={`navigation__link ${menuIsOpen ? 'navigation__nav--open' : ''}`}
-                           onClick={isClose}
-                           >Home</a>
+                           className={`navigation__link ${menuIsOpen ? 'navigation__nav--open' : ''}`}
+                           onClick={close}
+                        >Home</a>
                     </li>
                     <li className='navigation__item'>
                         <a href="#about"
                            className={`navigation__link ${menuIsOpen ? 'navigation__nav--open' : ''}`}
-                           onClick={isClose}
-                           >About</a>
+                           onClick={close}
+                        >About</a>
                     </li>
                     <li className='navigation__item'>
                         <a href="#projects"
                            className={`navigation__link ${menuIsOpen ? 'navigation__nav--open' : ''}`}
-                           onClick={isClose}
-                           >Projects</a>
+                           onClick={close}
+                        >Projects</a>
                     </li>
                     <li className='navigation__item'>
                         <a href="#contact"
                            className={`navigation__link ${menuIsOpen ? 'navigation__link-open' : ''}`}
-                           onClick={isClose}
-                           >Contact</a>
+                           onClick={close}
+                        >Contact</a>
                     </li>
                 </ul>
             </nav>

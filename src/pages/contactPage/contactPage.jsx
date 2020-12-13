@@ -1,25 +1,40 @@
-import React from 'react';
+import React, {  useContext } from 'react';
 import './contactPage-style.css';
 import Social from "../../components/social/Social";
 import '../../components/button/button-style.css';
 import {db} from '../../firebase';
+import Toast from "../../components/toast/Toast";
+import {AllStateContext} from "../../context/AllStateContext";
 
 const ContactPage = () => {
 
+    const {
+        messageIsShown,
+        setMessageIsShown,
+        name,
+        setName,
+        email,
+        setEmail,
+        message,
+        setMessage
+    } = useContext(AllStateContext);
+
     const handleSubmit = (event) => {
         event.preventDefault();
-        let formData = new FormData(event.target);
-        let data = Object.fromEntries(formData);
-        console.log("formData", formData);
-        console.log("data", data);
-        db.collection('contact').add(data)
+        db.collection('contact').add({
+            name, email, message
+        })
             .then(() => {
-                console.log("data was save to firestore")
+                setMessageIsShown(true);
+                setName('');
+                setEmail('');
+                setMessage('');
             })
             .catch(error => {
-                alert(error.message)
+                alert(error.message);
             });
     }
+
 
     return (
         <div className='container'>
@@ -31,23 +46,38 @@ const ContactPage = () => {
                         <Social/>
                     </section>
                     <form className='contact__input-block' onSubmit={handleSubmit}>
+                        <Toast isOpen={messageIsShown}/>
                         <h3 className='secondary-header'>Send a Message</h3>
                         <input className='contact__input'
                                type="text"
                                placeholder='Your Name *'
                                required={true}
+                               // todo нужно для db
                                name='name'
+                               value={name}
+                               onChange={(event) => {
+                                   setName(event.target.value);
+                                   console.log(name)
+                               }}
                         />
                         <input className='contact__input'
                                type="email" placeholder='Your Email *'
                                required={true}
                                name='email'
+                               value={email}
+                               onChange={(event) =>
+                                   setEmail(event.target.value)
+                               }
                         />
                         <textarea className='contact__textarea'
                                   name="Message" cols="30"
                                   rows="10"
                                   placeholder='Message'
                                   required={true}
+                                  value={message}
+                                  onChange={(event) =>
+                                      setMessage(event.target.value)
+                                  }
                         />
                         <div className='contact__control'>
                             <button className='btn btn-color-violet'>Send</button>

@@ -6,7 +6,7 @@ import {Switch, Route} from "react-router-dom";
 import ContactPage from "./pages/contactPage/contactPage";
 import ProjectPage from "./pages/projectsPage/projectsPage";
 import AboutPage from "./pages/aboutPage/aboutPage";
-import {MenuProvider} from "./context/menuContext";
+import {MenuProvider} from "./context/AllStateContext";
 
 function App() {
     return (

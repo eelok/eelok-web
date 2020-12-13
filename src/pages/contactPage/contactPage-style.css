@@ -26,7 +26,7 @@
     flex-basis: 40%;
 }
 .contact__social .social__wrapper{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .contact__input-block {
@@ -63,7 +63,7 @@
     color: var(--black-deep-color);
     border-radius: 13px;
     outline: none;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     resize: none;
 }
 .contact__textarea::placeholder, .contact__input::placeholder{
