@@ -11,6 +11,7 @@
     border: 3px solid transparent;
     color: var(--white-color);
     cursor: pointer;
+    outline: none;
 }
 
 @media (min-width: 768px) {
@@ -31,6 +32,7 @@
 .btn-color-green:hover {
     background-color: var(--green-color-dark);
     color: var(--white-color);
+    outline: none;
 }
 
 .btn-color-violet {
@@ -43,4 +45,5 @@
 .btn-color-violet:hover {
     background-color: var(--violet-color-dark);
     color: var(--white-color);
+    outline: none;
 }

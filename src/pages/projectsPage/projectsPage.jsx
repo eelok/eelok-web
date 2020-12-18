@@ -9,8 +9,8 @@ const ProjectPage = () => {
             <h2 className='main-header'>Projects</h2>
             <div className='cards-wrapper'>
             {
-                PROJECTS_DATA.map(project =>
-                   <Card key={project.id} {...project}/>
+                PROJECTS_DATA.map(projectDetails =>
+                   <Card key={projectDetails.id} {...projectDetails}/>
                )
             }
             </div>

@@ -7,10 +7,8 @@ const Toast = ({isOpen}) => {
     const {messageIsShown, setMessageIsShown} = useContext(AllStateContext);
 
     useEffect(() => {
-        console.log('use effect', isOpen);
         isOpen && setTimeout(() => {
             setMessageIsShown(false);
-            // onClose();
         }, 5000);
     }, [isOpen]);
 
