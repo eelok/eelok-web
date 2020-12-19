@@ -13,6 +13,7 @@
     --green-color-dark: #2BAD9E;
     --violet-color: #8474e5;
     --violet-color-dark: #493B9C;
+    --violet-color-light-light: #E5E0FA;
     --light-blue-color: #CBE8F2;
     --white-color: #ffffff;
     --black-color: #000000;
@@ -77,8 +78,8 @@
     padding: 4px 8px;
     line-height: 1.2;
     margin: 4px;
-    color: var(--black-deep-color);
-    background-color: var(--lignt-light-grey-color);
+    color: var(--white-color);
+    background-color: var(--violet-color);
     border-radius: 5px;
 }
 

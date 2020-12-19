@@ -2,7 +2,7 @@ import React from 'react';
 import './card-style.css';
 import {ReactComponent as GitHubLogo} from '../../assets/github.svg';
 
-const Card = ({title, technology, imageUrl}) => {
+const Card = ({title, technology, imageUrl, gitHubUrl}) => {
     return (
         <section className='card'>
             <div className='card__image-box'>
@@ -15,12 +15,14 @@ const Card = ({title, technology, imageUrl}) => {
                         technology.map(item =>
                             //проверить верно ли это
                             <div className='text-tag' key={item.toString()}>
-                                 {item}
+                                {item}
                             </div>
                         )
                     }
                 </div>
-                <GitHubLogo className='card__info-link-project-github'/>
+                    <a href={gitHubUrl}>
+                        <GitHubLogo className='card__info-link-project-github'/>
+                    </a>
             </div>
         </section>
     )

@@ -1,11 +1,10 @@
 .about {
-    padding: 30px;
-    margin: 0 30px 0 0;
+    padding: 20px;
+    margin: 0 10px;
     display: flex;
     flex-direction: column;
     background-color: var(--light-blue-color);
-    border-top-right-radius: 45px;
-    border-bottom-right-radius: 45px;
+    border-radius: 12px;
 }
 
 @media (min-width: 768px) {
@@ -36,11 +35,11 @@
     height: 250px;
     width: 100%;
     margin: 0 0 10px 0;
-    background-image: url('https://picsum.photos/id/244/380/380');
+    background-image: url('../../assets/DSC00795-Edit.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 45px;
+    border-radius: 12px;
 }
 
 @media (min-width: 768px) {
