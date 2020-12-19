@@ -1,5 +1,6 @@
 import React from 'react';
 import './about-style.css';
+import Qualification from "../../components/qualification/qualification";
 
 const AboutPage = () => {
     return (
@@ -13,7 +14,7 @@ const AboutPage = () => {
                         working out in the park</p>
                 </div>
                 <div className='about__gallery-block'>
-                    &nbsp;
+                    <Qualification/>
                 </div>
             </section>
         </div>
