@@ -21,6 +21,7 @@
     --light-grey-color: #54719d;
     --lignt-light-grey-color: #DAE2EC;
     --red-color: #960f0f;
+    --yellow-color: #FEC842;
 }
 
 .container{
@@ -75,12 +76,12 @@
     display: inline-block;
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 4px 8px;
     line-height: 1.2;
     margin: 4px;
     color: var(--black-deep-color);
-    /*background-color: var(--violet-color);*/
+    background-color: var(--white-color);
     border-radius: 5px;
 }
 
