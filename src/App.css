@@ -73,6 +73,7 @@
 }
 
 .text-tag{
+    font-family: inherit;
     display: inline-block;
     text-transform: uppercase;
     font-size: 12px;
@@ -82,6 +83,6 @@
     margin: 4px;
     color: var(--black-deep-color);
     background-color: var(--white-color);
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
