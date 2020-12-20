@@ -11,9 +11,6 @@ import mockitoicon from '../../assets/qualiIcons/mockito_Logo.png';
 import jUniticon from '../../assets/qualiIcons/jUnit-icon.png';
 import postgresql from '../../assets/qualiIcons/postgresql.svg';
 import gitIcon from '../../assets/qualiIcons/git-icon.svg';
-import mavenIcon from '../../assets/qualiIcons/Maven_logo.svg';
-import intelliJ from '../../assets/qualiIcons/IntelliJ_IDEA.svg';
-import visualStudioCode from '../../assets/qualiIcons/Visual_Studio_Code.svg';
 
 import './qualification-style.css';
 
@@ -30,9 +27,6 @@ const Qualification = () => {
         {title: 'Mockito', icon: mockitoicon},
         {title: 'jUnit', icon: jUniticon},
         {title: 'Git', icon: gitIcon},
-        {title: 'Maven', icon: mavenIcon},
-        {title: 'Intellij IDEA', icon: intelliJ},
-        {title: 'Visual Studio Code', icon: visualStudioCode},
     ];
     return (
         <section>
