@@ -8,8 +8,7 @@ import springicon from '../../assets/qualiIcons/spring-icon.svg';
 import jUniticon from '../../assets/qualiIcons/jUnit-icon.png';
 import postgresql from '../../assets/qualiIcons/postgresql.svg';
 import gitIcon from '../../assets/qualiIcons/git-icon.svg';
-
-import arrow from '../../assets/mt-2001-dots-img02.png';
+import grid from '../../assets/grid.png';
 
 import './qualification-style.css';
 
@@ -39,8 +38,8 @@ const Qualification = () => {
                     </div>
                 ))}
             </div>
-            <img className='about-arrow'
-                 src={arrow} alt=""
+            <img className='about-grid-image'
+                 src={grid} alt=""
             />
         </section>
     )

@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    margin: 15px;
 }
 
 .tech__name{
@@ -26,12 +26,12 @@
 }
 
 .tech__icon{
-    height: 32px;
+    height: 58px;
 }
 
-.about-arrow{
+.about-grid-image{
     position: absolute;
-    bottom: -103px;
+    bottom: -70px;
     right: -45px;
     z-index: -1;
 }
