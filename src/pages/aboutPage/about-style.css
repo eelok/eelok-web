@@ -25,7 +25,7 @@
 
 
 .about__info-block .main-header {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .about__info-block .plane-text {
@@ -48,11 +48,16 @@
 
     .about__gallery-block{
         width: 50%;
-        margin: 10px 0 10px 30px;
+        margin-left: 30px;
         height: auto;
     }
 }
 
 .header-about{
     text-align: center;
+}
+
+.about-separator{
+
+    /*width: 50%;*/
 }

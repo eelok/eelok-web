@@ -3,14 +3,13 @@ import React from 'react';
 import htmlicon from '../../assets/qualiIcons/html.svg';
 import cssicon from '../../assets/qualiIcons/css.svg';
 import reacticon from '../../assets/qualiIcons/reactIcon.svg';
-import hibernateicon from '../../assets/qualiIcons/hibernate.svg';
 import javaicon from '../../assets/qualiIcons/java.svg';
-import firebaseicons from '../../assets/qualiIcons/google-firebase.svg';
 import springicon from '../../assets/qualiIcons/spring-icon.svg';
-import mockitoicon from '../../assets/qualiIcons/mockito_Logo.png';
 import jUniticon from '../../assets/qualiIcons/jUnit-icon.png';
 import postgresql from '../../assets/qualiIcons/postgresql.svg';
 import gitIcon from '../../assets/qualiIcons/git-icon.svg';
+
+import arrow from '../../assets/mt-2001-dots-img02.png';
 
 import './qualification-style.css';
 
@@ -21,16 +20,13 @@ const Qualification = () => {
         {title: 'React', icon: reacticon},
         {title: 'Java', icon: javaicon},
         {title: 'Spring', icon: springicon},
-        {title: 'Hibernate', icon: hibernateicon},
-        {title: 'Firebase', icon: firebaseicons},
         {title: 'PostgreSQL', icon: postgresql},
-        {title: 'Mockito', icon: mockitoicon},
         {title: 'jUnit', icon: jUniticon},
         {title: 'Git', icon: gitIcon},
     ];
     return (
-        <section>
-            <h3 className='secondary-header tech-header'>Skill Set</h3>
+        <section className='qualification-section'>
+            <h3 className='main-header tech-header'>Skill Set</h3>
             <div className='tech-list'>
                 {icons.map((tech) => (
                     <div className='tech'>
@@ -43,6 +39,9 @@ const Qualification = () => {
                     </div>
                 ))}
             </div>
+            <img className='about-arrow'
+                 src={arrow} alt=""
+            />
         </section>
     )
 }

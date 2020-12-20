@@ -1,6 +1,9 @@
+
+.qualification-section{
+    position: relative;
+}
 .tech-header{
     text-align: center;
-    padding: 0 0 10px 0;
 }
 
 .tech-list{
@@ -13,6 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
 }
 
 .tech__name{
@@ -23,5 +27,11 @@
 
 .tech__icon{
     height: 32px;
-    margin: 20px 20px 2px 20px;
+}
+
+.about-arrow{
+    position: absolute;
+    bottom: -103px;
+    right: -45px;
+    z-index: -1;
 }
