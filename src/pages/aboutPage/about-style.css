@@ -34,13 +34,7 @@
 }
 
 .about__gallery-block {
-    /*height: 250px;*/
-    /*width: 100%;*/
     margin: 0 0 10px 0;
-    /*background-image: url('../../assets/DSC00795-Edit.jpg');*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    /*background-position: center;*/
     border-radius: 12px;
 }
 
@@ -58,6 +52,11 @@
 }
 
 .about-separator{
+    display: none;
+}
 
-    /*width: 50%;*/
+@media (min-width: 768px){
+    .about-separator{
+        display: block;
+    }
 }
