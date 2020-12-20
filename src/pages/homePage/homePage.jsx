@@ -7,6 +7,7 @@ import ProjectPage from "../projectsPage/projectsPage";
 import ContactPage from "../contactPage/contactPage";
 import '../../components/button/button-style.css';
 import Header from "../../components/header/header";
+import CrossingSection from "../../components/CrossingSection/crossingSection";
 
 const HomePage = () => {
     return (
@@ -26,8 +27,11 @@ const HomePage = () => {
                     </div>
                 </section>
             </div>
+            <CrossingSection/>
             <AboutPage/>
+            <CrossingSection/>
             <ProjectPage/>
+            <CrossingSection/>
             <ContactPage/>
         </>
     )

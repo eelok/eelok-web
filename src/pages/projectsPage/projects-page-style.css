@@ -1,8 +1,7 @@
 
 .projects .main-header {
     text-align: center;
-    margin-top: 20px;
-    padding: 20px 0 10px 0;
+    padding-bottom: 3px;
 }
 
 .cards-wrapper {
@@ -10,5 +9,4 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10px;
 }
