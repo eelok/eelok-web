@@ -6,8 +6,15 @@
     margin: 10px;
     box-shadow: 0 15px 34px 0 rgba(16,53,87,0.25);
     border-radius: 12px;
+    background-image: url('../../assets/curly-brackets.svg');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: left 5% bottom 10%;
 }
-
+.card__image-box{
+    background-color: red;
+    height: 100%;
+}
 @media (min-width: 768px) {
     .card{
         width: 330px;
@@ -20,31 +27,31 @@
 
 .card__info .secondary-header{
     margin-top: 20px;
+    align-self: center;
 }
 .card__info{
     height: 50%;
-    padding: 0 20px 20px 20px;
+    /*padding: 0 0 20px 20px;*/
     text-align: center;
     /*background-color: var(--green-color-light);*/
-    background-color: var(--light-blue-color);
+    /*background-color: var(--light-blue-color);*/
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .card__info-technology{
-    padding: 10px 0 0 0;
-    text-align: center;
-    flex-grow: 1;
-
+    display: block;
+    width: 50%;
+    text-align: left;
 }
 
 .card__info-link-project-github{
-    margin-top: 10px;
-    width: 35px;
-    height: 35px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 
 
@@ -52,9 +59,20 @@
     border: 4px solid var(--white-color);
     border-radius: 50%;
 
-    fill: var(--violet-color);
+    fill: var(--black-deep-color);
 }
 
 .card__info-link-project-github:hover{
     fill: var(--violet-color-dark);
+}
+
+.technology-item{
+    background-color: var(--yellow-color);
+    color: var(--black-deep-color);
+    font-size: 15px;
+    padding: 8px 20px;
+    margin: 8px 0 8px 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-transform: uppercase;
 }

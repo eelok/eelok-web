@@ -8,10 +8,10 @@ const Card = ({title, technology, imageUrl, gitHubUrl}) => {
     return (
         <section className='card'>
             <div className='card__image-box'>
-                <img className='card__image'
-                     srcSet={`${imageUrl1x} 1x, ${imageUrl2x} 2x`}
-                     alt="project cover"
-                />
+                {/*<img className='card__image'*/}
+                {/*     srcSet={`${imageUrl1x} 1x, ${imageUrl2x} 2x`}*/}
+                {/*     alt="project cover"*/}
+                {/*/>*/}
             </div>
             <div className='card__info'>
                 <h3 className='secondary-header'>{title}</h3>
@@ -19,7 +19,10 @@ const Card = ({title, technology, imageUrl, gitHubUrl}) => {
                     {
                         technology.map(item =>
                             //проверить верно ли это
-                            <div className='text-tag' key={item.toString()}>
+                            <div
+                                className="technology-item"
+                                // className='text-tag'
+                                key={item.toString()}>
                                 {item}
                             </div>
                         )
