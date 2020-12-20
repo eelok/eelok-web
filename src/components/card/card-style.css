@@ -1,5 +1,4 @@
 .card{
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -11,41 +10,43 @@
     background-repeat: no-repeat;
     background-position: left 5% bottom 10%;
 }
-.card__image-box{
-    background-color: red;
-    height: 100%;
-}
+
 @media (min-width: 768px) {
     .card{
         width: 330px;
     }
 }
 
-.card__image{
-    width: 100%;
-}
-
-.card__info .secondary-header{
-    margin-top: 20px;
-    align-self: center;
-}
 .card__info{
-    height: 50%;
-    /*padding: 0 0 20px 20px;*/
-    text-align: center;
-    /*background-color: var(--green-color-light);*/
-    /*background-color: var(--light-blue-color);*/
-
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
+
+    height: 50%;
+    text-align: center;
+}
+
+.card__info .secondary-header{
+    margin: 10px 0;
+    align-self: center;
 }
 
 .card__info-technology{
     display: block;
     width: 50%;
     text-align: left;
+}
+
+.technology-item{
+    background-color: var(--yellow-color);
+    color: var(--black-deep-color);
+    font-size: 15px;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-transform: uppercase;
 }
 
 .card__info-link-project-github{
@@ -66,13 +67,3 @@
     fill: var(--violet-color-dark);
 }
 
-.technology-item{
-    background-color: var(--yellow-color);
-    color: var(--black-deep-color);
-    font-size: 15px;
-    padding: 8px 20px;
-    margin: 8px 0 8px 0;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    text-transform: uppercase;
-}
