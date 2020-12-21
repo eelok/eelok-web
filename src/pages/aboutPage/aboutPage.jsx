@@ -2,7 +2,6 @@ import React from 'react';
 import './about-style.css';
 import Qualification from "../../components/qualification/qualification";
 import separator from '../../assets/wave-separator.png';
-import html__coding from '../../assets/html-coding.svg';
 
 const AboutPage = () => {
     return (
@@ -14,11 +13,9 @@ const AboutPage = () => {
                     <p className='plane-text'>I enjoy learning new technologies and computer languages.
                         When I'm not coding you'll find me at a fitness club. I also like to discover new restaurants
                         and delicious food.</p>
-                    <img className='code_brackets'
-                         src={html__coding} alt=""/>
                 </div>
-                {/*<img className='about-separator'*/}
-                {/*     src={separator} alt=""/>*/}
+                <img className='about-separator'
+                     src={separator} alt=""/>
                 <div className='about__gallery-block'>
                     <Qualification/>
                 </div>
