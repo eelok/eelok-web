@@ -5,6 +5,7 @@ import '../../components/button/button-style.css';
 import {db} from '../../firebase';
 import Toast from "../../components/toast/Toast";
 import {AllStateContext} from "../../context/AllStateContext";
+import grid from '../../assets/grid.png';
 
 const ContactPage = () => {
 
@@ -44,6 +45,9 @@ const ContactPage = () => {
                     <section className='contact__social'>
                         <h3 className='secondary-header'>Get in Touch</h3>
                         <Social/>
+                        <img src={grid} alt="grid in background"
+                            className='contact__grid_img'
+                        />
                     </section>
                     <form className='contact__input-block' onSubmit={handleSubmit}>
                         <Toast isOpen={messageIsShown}/>
