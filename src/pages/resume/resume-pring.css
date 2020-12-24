@@ -50,52 +50,30 @@
     color: var(--black-deep-color);;
 }
 
-/*////>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
 .section-title {
     font-size: 20px;
     margin-top: 25px;
     padding: 0 10px;
+    color: var(--black-deep-color);
 }
 
-.section {
-    display: flex;
-    flex-direction: row;
-    padding: 15px 0;
+.skill-section {
+    padding: 20px 30px 0 30px;
+}
+.skill-section__items{
+    column-count: 4;
+}
+.skill-section__item{
+    color: var(--black-deep-color);
+
 }
 
-.period {
-    width: 100px;
-}
-
-
-.content-header {
-    font-size: 17px;
-    font-weight: 700;
-}
-
-.content-text {
-    font-size: 16px;
-}
-
+/*////>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .section-education {
-    padding: 15px 0;
-    display: flex;
-    line-height: 1.5;
+
 }
 
 .section-education__timing {
-    width: 100px;
-}
 
-.section-education__timing:first-child {
-    padding-bottom: 10px;
-}
-
-.section-education__info-content:nth-child(2) {
-    padding-bottom: 10px;
-}
-
-.item-list {
-    list-style: none;
-    line-height: 1.5;
 }
