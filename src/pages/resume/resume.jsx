@@ -1,18 +1,30 @@
-import './resume-pring.css'
+import './resume-pring.css';
+import {RESUME_DATA} from './resume-data.js';
 
 const ResumePage = () => {
+
     return (
         <div className='resume-page'>
-            <section className='intro-section'>
-                <h1>Maria Petretckaia</h1>
-                <h3>Software Developer</h3>
-                <ul className='get-in-touch-section'>
-                    <li><span>Location</span>Germany, Berlin</li>
-                    <li><span>LinkedIn</span>https://www.linkedin.com/in/maria-petretckaia-78b6a560/</li>
-                    <li><span>xing</span>https://www.xing.com/profile/Maria_Petretckaia/cv</li>
-                    <li><span>eelok-web</span>https://eelok.netlify.app</li>
-                </ul>
-            </section>
+            {
+                RESUME_DATA.map(item =>
+                    <section className='intro-section'>
+                        <h1 className='intro-section__main-title'>{item.name}</h1>
+                        <h2 className='intro-section__secondary-title'>{item.activity}</h2>
+                        <div className='intro-section__contact'>
+                            {
+                                item.links.map(eachLink =>
+                                    <div className='intro-section__contact-box'>
+                                        <img src={eachLink.icon} alt="icon" className='intro-section__contact--icon'/>
+                                        <a href={eachLink.link}
+                                           className='intro-section__contact--link'>{eachLink.link}</a>
+                                    </div>
+                                )
+                            }
+                        </div>
+                    </section>
+                )
+            }
+
 
             <h2 className='section-title'>Skills</h2>
             <section className='section'>
@@ -43,15 +55,15 @@ const ResumePage = () => {
                     <div className='section-education__timing-content'>2002-07 - 2007-05</div>
                 </div>
                 <div className='section-education__info'>
-                        <div className='section-education__info-content'>
-                            <h3 className='content-header'>HTW Berlin - University of Applied Sciences</h3>
-                            <p className='content-text'>Applied Informatics</p>
-                        </div>
-                        <div className='section-education__info-content'>
-                            <h3 className='content-header'>Moscow State University of Geodesy and Cartography
-                                (MIIGAiK)</h3>
-                            <p className='content-text'>Aerial Geodesy</p>
-                        </div>
+                    <div className='section-education__info-content'>
+                        <h3 className='content-header'>HTW Berlin - University of Applied Sciences</h3>
+                        <p className='content-text'>Applied Informatics</p>
+                    </div>
+                    <div className='section-education__info-content'>
+                        <h3 className='content-header'>Moscow State University of Geodesy and Cartography
+                            (MIIGAiK)</h3>
+                        <p className='content-text'>Aerial Geodesy</p>
+                    </div>
                 </div>
             </section>
 
@@ -67,7 +79,7 @@ const ResumePage = () => {
                 </div>
             </section>
         </div>
-)
+    )
 }
 
 export default ResumePage;

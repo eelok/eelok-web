@@ -1,47 +1,101 @@
-.resume-page{
+.resume-page {
     width: 900px;
     margin: 10px auto;
+    border: 2px solid var(--lignt-light-grey-color);
+    border-radius: 5px;
 }
-.section-title{
+
+.intro-section {
+    padding: 15px 10px;
+    background-color: var(--bluish-gray);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.intro-section__main-title {
+    color: var(--black-deep-color);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.intro-section__secondary-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--light-grey-color)
+}
+
+.intro-section__contact {
+    padding-top: 20px;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.intro-section__contact-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.intro-section__contact--icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.intro-section__contact--link {
+    text-decoration: none;
+    margin-right: 10px;
+    color: var(--black-deep-color);;
+}
+
+/*////>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.section-title {
     font-size: 20px;
     margin-top: 25px;
+    padding: 0 10px;
 }
-.section{
+
+.section {
     display: flex;
     flex-direction: row;
     padding: 15px 0;
 }
 
-.period{
+.period {
     width: 100px;
 }
 
 
-.content-header{
+.content-header {
     font-size: 17px;
     font-weight: 700;
 }
 
-.content-text{
+.content-text {
     font-size: 16px;
 }
-.section-education{
+
+.section-education {
     padding: 15px 0;
     display: flex;
     line-height: 1.5;
 }
-.section-education__timing{
+
+.section-education__timing {
     width: 100px;
 }
-.section-education__timing:first-child{
+
+.section-education__timing:first-child {
     padding-bottom: 10px;
 }
 
-.section-education__info-content:nth-child(2){
+.section-education__info-content:nth-child(2) {
     padding-bottom: 10px;
 }
 
-.item-list{
+.item-list {
     list-style: none;
     line-height: 1.5;
 }
