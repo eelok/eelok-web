@@ -22,7 +22,7 @@ const HomePage = () => {
                         <h2 className='main-header'>Hello, my name is Maria</h2>
                         <p className='plane-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
                             similique?</p>
-                        <Link to='/resume' className='btn btn-color-violet'>Resume</Link>
+                        <Link to='/cv' className='btn btn-color-violet'>Curriculum Vitae</Link>
                     </div>
                 </section>
             </div>
