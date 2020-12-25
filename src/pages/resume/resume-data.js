@@ -1,7 +1,7 @@
-import homeAddress from '../../assets/home.svg';
-import linkedin from '../../assets/linkedin.svg';
-import github from '../../assets/github.svg';
-import internet from '../../assets/internet.svg';
+import {ReactComponent as homeAddress} from '../../assets/home.svg';
+import {ReactComponent as linkedin} from '../../assets/linkedin.svg';
+import {ReactComponent as github} from '../../assets/github.svg';
+import {ReactComponent as internet}    from '../../assets/internet.svg';
 
 
 export const  RESUME_DATA = [
@@ -11,19 +11,19 @@ export const  RESUME_DATA = [
         links: [
             {
                 icon: homeAddress,
-                link: 'Germany, Berlin'
+                link: {title:'Germany, Berlin', href:'google.com/maps/@52.5111495,13.3327158,12z'}
             },
             {
                 icon: linkedin,
-                link: 'www.linkedin.com/in/maria-petretckaia-78b6a560'
+                link: {title: 'linkedin.com/in/maria-petretckaia-78b6a560', href:'linkedin.com/in/maria-petretckaia-78b6a560'}
             },
             {
                 icon: github,
-                link: 'https://github.com/eelok'
+                link: {title: 'github.com/eelok', href: 'github.com/eelok'}
             },
             {
                 icon: internet,
-                link: 'https://eelok.netlify.app'
+                link: {title: 'eelok.netlify.app', href: 'eelok.netlify.app'}
             }
         ],
         education: [

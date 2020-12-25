@@ -16,10 +16,9 @@ const ResumePage = () => {
                                 {
                                     item.links.map(eachLink =>
                                         <div className='intro-section__contact-box'>
-                                            <img src={eachLink.icon} alt="icon"
-                                                className='intro-section__contact--icon'/>
-                                            <a href={eachLink.link}
-                                               className='intro-section__contact--link'>{eachLink.link}</a>
+                                            <eachLink.icon className='intro-section__contact--icon'/>
+                                            <a href={`//${eachLink.link.href}`}
+                                               className='intro-section__contact--link'>{eachLink.link.title}</a>
                                         </div>
                                     )
                                 }
