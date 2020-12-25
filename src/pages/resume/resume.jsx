@@ -8,7 +8,8 @@ const ResumePage = () => {
             {
                 RESUME_DATA.map(item =>
                     <>
-                        <section className='intro-section'>
+                        {/*//todo check key*/}
+                        <section  key={item.toString()} className='intro-section'>
                             <h1 className='intro-section__main-title'>{item.name}</h1>
                             <h2 className='intro-section__secondary-title'>{item.activity}</h2>
                             <div className='intro-section__contact'>
@@ -16,7 +17,7 @@ const ResumePage = () => {
                                     item.links.map(eachLink =>
                                         <div className='intro-section__contact-box'>
                                             <img src={eachLink.icon} alt="icon"
-                                                 className='intro-section__contact--icon'/>
+                                                className='intro-section__contact--icon'/>
                                             <a href={eachLink.link}
                                                className='intro-section__contact--link'>{eachLink.link}</a>
                                         </div>

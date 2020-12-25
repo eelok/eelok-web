@@ -1,6 +1,6 @@
 import homeAddress from '../../assets/home.svg';
 import linkedin from '../../assets/linkedin.svg';
-import xing from '../../assets/xing.svg';
+import github from '../../assets/github.svg';
 import internet from '../../assets/internet.svg';
 
 
@@ -18,8 +18,8 @@ export const  RESUME_DATA = [
                 link: 'www.linkedin.com/in/maria-petretckaia-78b6a560'
             },
             {
-                icon: xing,
-                link: 'www.xing.com/profile/Maria_Petretckaia/cv*/'
+                icon: github,
+                link: 'https://github.com/eelok'
             },
             {
                 icon: internet,

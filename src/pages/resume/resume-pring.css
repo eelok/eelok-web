@@ -3,12 +3,13 @@
     margin: 10px auto;
     border: 1px solid var(--lignt-light-grey-color);
     border-radius: 5px;
+
+    color: var(--black-deep-color)
 }
 
 .intro-section {
-    padding: 15px 10px;
+    padding: 20px;
     border-bottom: 1px solid var(--lignt-light-grey-color);
-    /*background-color: var(--bluish-gray);*/
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-bottom: 25px;
@@ -44,19 +45,19 @@
     width: 20px;
     height: 20px;
     margin-right: 10px;
+    fill: var(--black-deep-color);
 }
 
 .intro-section__contact--link {
     text-decoration: none;
     margin-right: 10px;
-    color: var(--black-deep-color);;
+    color: var(--black-deep-color);
 }
 
 
 .section-title {
     font-size: 20px;
-    padding: 0 10px;
-    color: var(--black-deep-color);
+    padding: 0 20px;
 }
 
 .common-section {
@@ -68,7 +69,6 @@
 }
 .common-section__item{
     line-height: 1.5;
-    color: var(--black-deep-color);
 }
 .section-education__wrapper{
     padding: 20px;
@@ -83,15 +83,9 @@
 .section-education__time{
     width: 120px;
     padding-right: 10px;
-    color: var(--black-deep-color);
 }
 
 .section-education__place-name{
-    color: var(--black-deep-color);
     font-weight: bold;
     font-size: 16px;
-}
-
-.section-education__place-specialization{
-    color: var(--black-deep-color);
 }
