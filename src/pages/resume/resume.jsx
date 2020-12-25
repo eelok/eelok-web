@@ -26,34 +26,34 @@ const ResumePage = () => {
                         </section>
                         <h2 className='section-title'>Skill Set</h2>
 
-                        <section className='skill-section'>
-                            <div className='skill-section__items'>
+                        <section className='common-section'>
+                            <div className='common-section__items'>
                                 {
                                     item.skills.map(skill =>
-                                        <div className='skill-section__item'>{skill}</div>
+                                        <div className='common-section__item'>{skill}</div>
                                     )
                                 }
                             </div>
                         </section>
                         <h2 className='section-title'>Education</h2>
-                        <div className='section-education'>
-                            {
-                                item.education.map(uni =>
-                                    <>
-                                        <div>{uni.time}</div>
-                                        <div>{uni.uniName}</div>
-                                        <div>{uni.specialization}</div>
-                                    </>
-                                )
-                            }
-
-                        </div>
-
+                        <section className='section-education__wrapper'>
+                        {
+                            item.education.map(uni =>
+                                <div className='section-education'>
+                                    <div className='section-education__time'>{uni.time}</div>
+                                    <div className='section-education__place'>
+                                        <div className='section-education__place-name'>{uni.uniName}</div>
+                                        <div  className='section-education__place-specialization'>{uni.specialization}</div>
+                                    </div>
+                                </div>
+                            )
+                        }
+                        </section>
                         <h2 className='section-title'>Languages</h2>
-                        <section>
+                        <section className='common-section'>
                             {
                                 item.languages.map(language =>
-                                    <div>{language}</div>
+                                    <div className='common-section__item'>{language}</div>
                                 )
                             }
                         </section>

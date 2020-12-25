@@ -28,18 +28,18 @@ export const  RESUME_DATA = [
         ],
         education: [
             {
-                time: '2002-07 - 2007-05',
-                uniName: 'Moscow State University of Geodesy and Cartography (MIIGAiK)',
-                specialization: 'Aerial Geodesy',
-            },
-            {
                 time: '2018-04 - present',
                 uniName: 'HTW Berlin - University of Applied Sciences',
                 specialization: 'Applied Informatics',
             },
+            {
+                time: '2002-07 - 2007-05',
+                uniName: 'Moscow State University of Geodesy and Cartography (MIIGAiK)',
+                specialization: 'Aerial Geodesy',
+            },
         ],
         skills: ['HTML', 'CSS', 'Java', 'React', 'Spring Boot', 'Spring Cloud', 'Junit', 'Mockito', 'Hibernate', 'PostgreSQL', 'Git', 'Maven'],
-        languages: ['German', 'English', 'Russian']
+        languages: ['German', 'English', 'Russian (native)']
     }
 ]
 
