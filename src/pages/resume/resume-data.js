@@ -15,7 +15,7 @@ export const  RESUME_DATA = [
             },
             {
                 icon: linkedin,
-                link: {title: 'linkedin.com/in/eelok/', href:'linkedin.com/in/eelok/'}
+                link: {title: 'www.linkedin.com/in/eelok', href:'www.linkedin.com/in/eelok'}
             },
             {
                 icon: github,

@@ -18,7 +18,7 @@ const HomePage = () => {
 
                     </div>
                     <div className='home__information'>
-                        <h4 className='third-header'>web developer</h4>
+                        <h4 className='third-header'>Software Developer</h4>
                         <h2 className='main-header'>Hello, my name is Maria</h2>
                         <p className='plane-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
                             similique?</p>

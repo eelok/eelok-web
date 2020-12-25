@@ -10,7 +10,9 @@ const Social = () => {
             <a href="https://www.xing.com/profile/Maria_Petretckaia/cv">
                 <XingLogo className='navbar__social-item'/>
             </a>
-            <Linkedin className='navbar__social-item linkedin'/>
+            <a href="//linkedin.com/in/eelok">
+                <Linkedin className='navbar__social-item linkedin'/>
+            </a>
             <a href='https://github.com/eelok'>
                 <Github className='navbar__social-item'/>
             </a>
