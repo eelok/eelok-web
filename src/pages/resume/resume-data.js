@@ -34,7 +34,7 @@ export const  RESUME_DATA = [
             },
             {
                 time: '2002-07 - 2007-05',
-                uniName: 'Moscow State University of Geodesy and Cartography (MIIGAiK)',
+                uniName: 'MIIGAiK - Moscow State University of Geodesy and Cartography',
                 specialization: 'Aerial Geodesy',
             },
         ],
