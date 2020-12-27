@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 
-import {ReactComponent as ELogo} from '../../assets/linkedin.svg';
+import {ReactComponent as ELogo} from '../../assets/eelok15.svg';
 import './header-style.css';
 import Navigation from "../navbar/navigation";
 
@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <div className='header' id="home">
             <div className={`overlay ${menuIsOpen ? 'overlay--open' : ''}`}></div>
-            <ELogo className='mainLogo'/>
+            <div className='mainLogo-wrapper'><ELogo className='mainLogo'/></div>
             <Navigation/>
             <Social/>
         </div>
