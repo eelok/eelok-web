@@ -16,13 +16,14 @@
 }
 
 .navigation__button{
-    height: 50px;
-    width: 50px;
-    background-color: var(--lignt-light-grey-color);
-    border-radius: 50%;
+    height: 59px;
+    width: 59px;
+    background-color: var(--black-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 
     position: fixed;
-    top: 10px;
+    top: 0;
     right: 28px;
     z-index: 10;
 
@@ -139,10 +140,10 @@
 
 /*line hamburger icon*/
 .line_middle{
-    margin-top: 24px;
-    height: 2px;
+    margin-top: 27px;
+    height: 3px;
     width: 35px;
-    background-color: var(--violet-color);
+    background-color: var(--yellow-color);
     display: inline-block;
 
     position: relative;
@@ -151,20 +152,20 @@
 
 .line_middle::after{
     content: "";
-    height: 2px;
+    height: 3px;
     width: 35px;
     top: 0.6rem;
     left: 0;
-    background-color: var(--violet-color);
+    background-color: var(--yellow-color);
     position: absolute;
 }
 .line_middle::before{
     content: "";
-    height: 2px;
+    height: 3px;
     width: 35px;
     top: -0.6rem;
     left: 0;
-    background-color: var(--violet-color);
+    background-color: var(--yellow-color);
     position: absolute;
 }
 
