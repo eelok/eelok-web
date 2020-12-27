@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 
-import {ReactComponent as ELogo} from '../../assets/eelok15.svg';
+import {ReactComponent as ELogo} from '../../assets/eelok16.svg';
 import './header-style.css';
 import Navigation from "../navbar/navigation";
 
