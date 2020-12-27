@@ -64,7 +64,7 @@
     z-index: 7;
     transform: translateX(300px);
 
-    background-color: var(--violet-color);
+    background-color: var(--yellow-color);
     transition: all .6s ease;
 }
 
@@ -111,7 +111,7 @@
 .navigation__link{
     font-size: 25px;
     font-weight: 300;
-    color: var(--white-color);
+    color: var(--black-color);
     text-decoration: none;
     padding: 10px 20px;
     cursor: pointer;
