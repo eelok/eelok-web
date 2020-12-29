@@ -7,13 +7,16 @@ import './socila-style.css';
 const Social = () => {
     return (
         <section className='social__wrapper'>
-            <a href="https://www.xing.com/profile/Maria_Petretckaia/cv">
+            <a className='navbar__social-link'
+                href="https://www.xing.com/profile/Maria_Petretckaia/cv">
                 <XingLogo className='navbar__social-item'/>
             </a>
-            <a href="//linkedin.com/in/eelok">
+            <a className='navbar__social-link'
+                href="//linkedin.com/in/eelok">
                 <Linkedin className='navbar__social-item'/>
             </a>
-            <a href='https://github.com/eelok'>
+            <a className='navbar__social-link'
+                href='https://github.com/eelok'>
                 <Github className='navbar__social-item'/>
             </a>
         </section>
