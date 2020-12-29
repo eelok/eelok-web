@@ -12,10 +12,10 @@ export const PROJECTS_DATA = [
         technology: ['React', 'html', 'css', 'firebase'],
         gitHubUrl: 'https://github.com/eelok/admin-office-sb'
     },
-    // {
-    //     id: 3,
-    //     title: 'Songs Microservices',
-    //     technology: ['Java', 'Spring', 'Spring Cloud', 'Eureka', 'Hibernate', 'JUnit', 'Mockito'],
-    //     imageUrl: ''
-    // },
+    {
+        id: 3,
+        title: 'Songs Microservices',
+        technology: ['Java', 'Spring', 'Spring Cloud', 'Hibernate', 'JUnit', 'Mockito'],
+        imageUrl: 'https://github.com/eelok/songs-MS'
+    },
 ]
