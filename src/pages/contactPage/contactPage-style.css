@@ -68,7 +68,7 @@
     outline: none;
     margin-bottom: 50px;
     resize: none;
-    z-index: 5;
+    z-index: 2;
 }
 .contact__textarea::placeholder, .contact__input::placeholder{
     color: var(--black-deep-color);
@@ -85,6 +85,5 @@
     position: absolute;
     bottom: 75px;
     left: 10px;
-    /*height: 100px;*/
-    z-index: 4;
+    z-index: 1;
 }
