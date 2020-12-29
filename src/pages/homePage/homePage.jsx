@@ -20,8 +20,7 @@ const HomePage = () => {
                     <div className='home__information'>
                         <h4 className='third-header'>Software Developer</h4>
                         <h2 className='main-header'>Hello, my name is Maria</h2>
-                        <p className='plane-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
-                            similique?</p>
+                        <p className='plane-text'>Let's collaborate</p>
                         <Link to='/cv' className='btn btn-color-violet'>Curriculum Vitae</Link>
                     </div>
                 </section>
