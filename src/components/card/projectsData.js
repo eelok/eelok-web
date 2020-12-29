@@ -15,7 +15,7 @@ export const PROJECTS_DATA = [
     {
         id: 3,
         title: 'Songs Microservices',
-        technology: ['Java', 'Spring', 'Spring Cloud', 'Hibernate', 'JUnit', 'Mockito'],
-        imageUrl: 'https://github.com/eelok/songs-MS'
+        technology: ['Spring', 'Hibernate', 'JUnit', 'Mockito'],
+        gitHubUrl: 'https://github.com/eelok/songs-MS'
     },
 ]
