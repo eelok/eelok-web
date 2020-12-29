@@ -1,6 +1,6 @@
 .about {
     padding: 30px;
-    margin: 30px 30px 70px 0;
+    margin: 30px 28px 70px 0;
     display: flex;
     flex-direction: column;
     background-color: var(--green-color-light);
