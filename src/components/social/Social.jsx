@@ -11,7 +11,7 @@ const Social = () => {
                 <XingLogo className='navbar__social-item'/>
             </a>
             <a href="//linkedin.com/in/eelok">
-                <Linkedin className='navbar__social-item linkedin'/>
+                <Linkedin className='navbar__social-item'/>
             </a>
             <a href='https://github.com/eelok'>
                 <Github className='navbar__social-item'/>

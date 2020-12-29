@@ -19,8 +19,3 @@
 .navbar__social-item:hover {
     fill: var(--violet-color-dark);
 }
-
-.navbar__social-item.linkedin {
-    width: 26px;
-    height: 26px;
-}
