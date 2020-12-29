@@ -10,12 +10,10 @@ const Card = ({title, technology, gitHubUrl}) => {
                 <h3 className='secondary-header'>{title}</h3>
                 <div className='card__info-technology'>
                     {
-                        technology.map(item =>
-                            //проверить верно ли это
+                        technology.map((item, index) =>
                             <div
                                 className="technology-item"
-                                // className='text-tag'
-                                key={item.toString()}>
+                                key={index.toString()}>
                                 {item}
                             </div>
                         )

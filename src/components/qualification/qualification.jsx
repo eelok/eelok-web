@@ -27,8 +27,8 @@ const Qualification = () => {
         <section className='qualification-section'>
             <h3 className='main-header tech-header'>Skill Set</h3>
             <div className='tech-list'>
-                {icons.map((tech) => (
-                    <div className='tech'>
+                {icons.map((tech, index) => (
+                    <div key={index.toString()} className='tech'>
                         <img
                             src={tech.icon}
                             alt={tech.title}

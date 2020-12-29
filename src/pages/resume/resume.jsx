@@ -6,16 +6,15 @@ const ResumePage = () => {
     return (
         <div className='resume-page'>
             {
-                RESUME_DATA.map(item =>
+                RESUME_DATA.map((item, index) =>
                     <>
-                        {/*//todo check key*/}
-                        <section  key={item.toString()} className='intro-section'>
+                        <section  key={index.toString()} className='intro-section'>
                             <h1 className='intro-section__main-title'>{item.name}</h1>
                             <h2 className='intro-section__secondary-title'>{item.activity}</h2>
                             <div className='intro-section__contact'>
                                 {
-                                    item.links.map(eachLink =>
-                                        <div className='intro-section__contact-box'>
+                                    item.links.map((eachLink, index) =>
+                                        <div key={index.toString()} className='intro-section__contact-box'>
                                             <eachLink.icon className='intro-section__contact--icon'/>
                                             <a href={`//${eachLink.link.href}`}
                                                className='intro-section__contact--link'>{eachLink.link.title}</a>
@@ -29,8 +28,8 @@ const ResumePage = () => {
                         <section className='common-section'>
                             <div className='common-section__items'>
                                 {
-                                    item.skills.map(skill =>
-                                        <div className='common-section__item'>{skill}</div>
+                                    item.skills.map((skill, index) =>
+                                        <div key={index.toString()} className='common-section__item'>{skill}</div>
                                     )
                                 }
                             </div>
@@ -52,8 +51,8 @@ const ResumePage = () => {
                         <h2 className='section-title'>Languages</h2>
                         <section className='common-section'>
                             {
-                                item.languages.map(language =>
-                                    <div className='common-section__item'>{language}</div>
+                                item.languages.map((language, index) =>
+                                    <div key={index.toString()} className='common-section__item'>{language}</div>
                                 )
                             }
                         </section>

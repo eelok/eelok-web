@@ -56,7 +56,6 @@ const ContactPage = () => {
                                type="text"
                                placeholder='Your Name *'
                                required={true}
-                               // todo нужно для db
                                name='name'
                                value={name}
                                onChange={(event) => {
