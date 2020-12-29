@@ -51,7 +51,6 @@
     height: 20px;
     margin-right: 10px;
     fill: var(--black-deep-color);
-    cursor: pointer;
 }
 
 .intro-section__contact--link {
