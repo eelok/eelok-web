@@ -23,6 +23,27 @@ const ResumePage = () => {
                                 }
                             </div>
                         </section>
+                        <h2 className='section-title'>Work Experience</h2>
+                        <section className='section-education__wrapper'>
+                            {
+                                item.workExperience.map(compapy =>
+                                    <div className='section-education'>
+                                        <div className='section-education__time'>{compapy.time}</div>
+                                        <div className='section-education__place'>
+                                            <div className='section-education__place-name position'>{compapy.companyName}</div>
+                                            <div  className='section-education__place-specialization position'>{compapy.position}</div>
+                                            <div>
+                                                {
+                                                    compapy.duty.map((item, index) =>
+                                                        <div key={index.toString()}>{item}</div>
+                                                    )
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                        </section>
                         <h2 className='section-title'>Skill Set</h2>
 
                         <section className='common-section'>
@@ -52,9 +73,19 @@ const ResumePage = () => {
                         <section className='common-section'>
                             {
                                 item.languages.map((language, index) =>
-                                    <div key={index.toString()} className='common-section__item'>{language}</div>
+                                    <div key={index.toString()}>{language}</div>
                                 )
                             }
+                        </section>
+                        <h2 className='section-title'>Soft Skills</h2>
+                        <section className='common-section'>
+
+                                {
+                                    item.softSkills.map((softSkill, index) =>
+                                        <div key={index.toString()} className='common-section__items'>{softSkill}</div>
+                                    )
+                                }
+
                         </section>
                     </>
                 )

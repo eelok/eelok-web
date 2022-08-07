@@ -11,7 +11,7 @@ export const  RESUME_DATA = [
         links: [
             {
                 icon: homeAddress,
-                link: {title:'Germany, Berlin', href:'google.com/maps/@52.5111495,13.3327158,12z'}
+                link: {title:'Germany, Waldshut-Tiengen'}
             },
             {
                 icon: linkedin,
@@ -28,7 +28,7 @@ export const  RESUME_DATA = [
         ],
         education: [
             {
-                time: '2018-04 - present',
+                time: '2018-04 - 2022-03',
                 uniName: 'HTW Berlin - University of Applied Sciences',
                 specialization: 'Applied Informatics',
             },
@@ -38,8 +38,21 @@ export const  RESUME_DATA = [
                 specialization: 'Aerial Geodesy',
             },
         ],
-        skills: ['HTML', 'CSS', 'Java', 'React', 'Spring Boot', 'Spring Cloud', 'Junit', 'Mockito', 'Hibernate', 'PostgreSQL', 'Git', 'Maven'],
-        languages: ['German', 'English', 'Russian (native)']
+        workExperience: [
+            {
+                time: '2021-12 - present',
+                companyName: 'Resourceful Humans GmbH',
+                position: 'Junior Backend Node.JS Software Developer',
+                duty: ['Implementation of GraphQL API',
+                      'Utilising Sequelize ORM',
+                      'Store and fetch data in and from Postgres',
+                      'Writing unit and integration tests with Jest',
+                      'Github, git', 'Jira, Notion']
+            }
+        ],
+        skills: ['JavaScript', 'Java', 'React', 'Spring Boot', 'Spring Cloud',  'HTML', 'CSS','Jest', 'Junit', 'Mockito','Sequelize', 'Hibernate', 'PostgreSQL', 'Git', 'Maven', 'Postman', 'Jira', 'Notion'],
+        languages: ['German (C1 certificate)', 'English (good written and spoken)', 'Russian (native)'],
+        softSkills: ['Teamwork', 'Flexibility', 'Time management', 'Responsibility'],
     }
 ]
 
