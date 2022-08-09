@@ -43,6 +43,8 @@ export const  RESUME_DATA = [
                 time: '2021-12 - present',
                 companyName: 'Resourceful Humans GmbH',
                 position: 'Junior Backend Node.JS Software Developer',
+                intro: 'I introduced tests and kept the culture of writing tests for each feature and sought toward full coverage. ' +
+                    'I implemented new features and refactored code to make it more maintainable and readable.',
                 duty: ['Implementation of GraphQL API',
                       'Utilising Sequelize ORM',
                       'Store and fetch data in and from Postgres',

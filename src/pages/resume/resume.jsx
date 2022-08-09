@@ -32,6 +32,7 @@ const ResumePage = () => {
                                         <div className='section-education__place'>
                                             <div className='section-education__place-name position'>{compapy.companyName}</div>
                                             <div  className='section-education__place-specialization position'>{compapy.position}</div>
+                                            <div className='section-education__place-specialization position'>{compapy.intro}</div>
                                             <div>
                                                 {
                                                     compapy.duty.map((item, index) =>
